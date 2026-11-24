@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <h1>Моё личное приложение с временем</h1>
+
+    <div class="block">
+        <h2>Текущее время</h2>
+        <div id="clock">00:00:00</div>
+    </div>
+
+    <div class="block">
+        <h2>Таймер</h2>
+        <input type="number" id="minutes" placeholder="Минуты" min="0">
+        <input type="number" id="seconds" placeholder="Секунды" min="0" max="59">
+
+        <div id="timer">00:00</div>
+
+        <button onclick="startTimer()">Старт</button>
+        <button onclick="stopTimer()">Стоп</button>
+        <button onclick="resetTimer()">Сброс</button>
+    </div>
+
+    <div class="block">
+        <h2>Секундомер</h2>
+        <div id="stopwatch">00:00:00</div>
+
+        <button onclick="startStopwatch()">Старт</button>
+        <button onclick="stopStopwatch()">Стоп</button>
+        <button onclick="resetStopwatch()">Сброс</button>
+        <button onclick="addLap()">Круг</button>
+
+        <ul id="laps"></ul>
+    </div>
+
+    <div class="block">
+        <h2>До Нового года осталось</h2>
+        <div id="newYear"></div>
+    </div>
+
+    <div class="block">
+        <h2>Будильник</h2>
+        <input type="time" id="alarmTime">
+        <button onclick="setAlarm()">Установить</button>
+        <h2 id="alarmMessage"></h2>
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
